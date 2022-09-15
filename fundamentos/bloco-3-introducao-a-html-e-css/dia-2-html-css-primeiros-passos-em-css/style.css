@@ -1,0 +1,12 @@
+h1 {
+    size: 65px; color: orange; font-family: sans-serif; font-style: oblique;  
+}
+.pul {
+    background-color: blueviolet;
+}
+p {font-weight: 600; font-size: 3em; line-height: 100px;
+}
+body{font-size: 16px;text-align: center; text-decoration: overline;}
+#amarelo{background-color: yellow;}
+#vermelho{background-color: red;}
+#marrom{background-color: brown;}
