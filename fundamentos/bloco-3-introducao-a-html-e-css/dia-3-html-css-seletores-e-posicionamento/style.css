@@ -1,37 +1,57 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+ol > li{
+    background-color: yellow;
 }
-div:hover{
-    border: 5px solid pink;
+ol > li:nth-of-type(1){
+    text-transform: uppercase ;
 }
-div:nth-of-type(1){
+ol > li:nth-of-type(3){
+    text-transform: uppercase ;
+}
+ol > li:nth-of-type(5){
+    text-transform: uppercase ;
+}
+
+ol > li:nth-of-type(2){
+    color: green ;
+}
+ol > li:nth-of-type(4){
+    color: green ;
+}
+ol > li:nth-of-type(6){
+    color: green ;
+}
+h1,h2,h3,h4 {
+    color: red;
+}
+.italico{
+    font-size: 40px;
+    border: 1px black solid;
+}
+li{
+    font-size: 20px;
+}
+
+li.italico {
+    font-weight: bold;
+}
+
+ul.prog li:nth-of-type(1){
     color: blue;
 }
-div:nth-of-type(2){
-    color: yellow
+ul.prog li:nth-of-type(2){
+    color: blue;
 }
-div:nth-of-type(3){
-    color: green;
+ul.prog li:nth-of-type(3){
+    color: blue;
 }
-div:nth-of-type(4){
-    color: black;
+ul.prog li.java{
+    background-color: pink;
 }
-div:nth-of-type(5){
-    color: pink;
+
+.sites{
+    list-style: none;    
 }
-div:nth-of-type(1) >h3 {
-    font-style: italic;
-}
-div:nth-of-type(2) >h3 {
-    font-style: bold;
-}
-div:nth-of-type(3) >h3 {
-    font-style: italic;
-    font-size: x-large;
-}
-div:nth-of-type(4) >h3 {
-    font-style: bold;
-}
-div:nth-of-type(5) >h3 {
-    font-style: italic;
+ul.sites li:nth-of-type(1):hover{
+    color: orange;
+
 }
