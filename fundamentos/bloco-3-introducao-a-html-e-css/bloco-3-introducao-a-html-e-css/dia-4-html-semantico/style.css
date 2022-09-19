@@ -1,0 +1,47 @@
+body{
+    background-color: #474444 ;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .fato1{
+    width: 50%;
+    float: left;
+    display: block;
+  }
+  .imagem1{
+    position: absolute;
+    width: 30%;
+    display: inline-block;
+    top: 645px;
+    right: 70px;
+    border-radius: 30px;
+    opacity: 60%;
+    }
+    .fato1 .imagem1{
+      border: 2px black solid;
+
+    }
+    .fatoFigura{
+      border: #000000 2px solid;
+    }
+
+  .fato2{
+    width: 50%;
+    display: block;
+  }
+  .fato3{
+    width: 50%;
+  }
