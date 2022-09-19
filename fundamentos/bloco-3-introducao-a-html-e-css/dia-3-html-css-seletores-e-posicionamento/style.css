@@ -1,12 +1,37 @@
-h1,p {
-    text-align: center;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-ol:hover {
-    background-color: blue;
+div:hover{
+    border: 5px solid pink;
 }
-li:active{
-    font-family: 'Courier New', Courier, monospace;
+div:nth-of-type(1){
+    color: blue;
 }
-ol, ul{
-list-style: none;
+div:nth-of-type(2){
+    color: yellow
+}
+div:nth-of-type(3){
+    color: green;
+}
+div:nth-of-type(4){
+    color: black;
+}
+div:nth-of-type(5){
+    color: pink;
+}
+div:nth-of-type(1) >h3 {
+    font-style: italic;
+}
+div:nth-of-type(2) >h3 {
+    font-style: bold;
+}
+div:nth-of-type(3) >h3 {
+    font-style: italic;
+    font-size: x-large;
+}
+div:nth-of-type(4) >h3 {
+    font-style: bold;
+}
+div:nth-of-type(5) >h3 {
+    font-style: italic;
 }
