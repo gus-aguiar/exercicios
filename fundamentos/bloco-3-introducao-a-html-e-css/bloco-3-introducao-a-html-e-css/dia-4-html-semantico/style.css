@@ -25,16 +25,19 @@ table {
     position: absolute;
     width: 30%;
     display: inline-block;
-    top: 645px;
+    top: 845px;
     right: 70px;
     border-radius: 30px;
     opacity: 60%;
     }
-    .fato1 .imagem1{
+    /* .imagem1{
       border: 2px black solid;
+      float: right;
+      position: relative;
+      width: 40%; */
 
     }
-    .fatoFigura{
+    .fatoFoto1{
       border: #000000 2px solid;
     }
 
@@ -45,3 +48,15 @@ table {
   .fato3{
     width: 50%;
   }
+.vrau{
+  list-style: none;
+  background-color: green;
+  display: inline-block;
+  width: 100%;
+}
+ul li {
+  display: inline;
+  background-color: green;
+  margin: 30px;
+  text-decoration: none;
+}
