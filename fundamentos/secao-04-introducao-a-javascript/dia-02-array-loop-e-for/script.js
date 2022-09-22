@@ -1,4 +1,4 @@
-let numbers = [2,4,6];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // for (let index = 0; index < numbers.length; index += 1){
 //     console.log(numbers[index]);
 // }
@@ -21,13 +21,24 @@ let numbers = [2,4,6];
 //     }
 // }
 // console.log(maiorn)
-let contadorImpar = 0 
+// let contadorImpar = 0 
+// for(let index = 0 ; index < numbers.length; index += 1){
+//     if(numbers[index] % 2 === 1){
+//         contadorImpar += 1
+//     }
+// }
+// if (contadorImpar === 0){
+//     console.log('nenhum valor ímpar encontrado')
+// }
+// console.log(contadorImpar)
+
+let menorNumero = 0 
 for(let index = 0 ; index < numbers.length; index += 1){
-    if(numbers[index] % 2 === 1){
-        contadorImpar += 1
+    if(numbers[index] > 0){
+        menorNumero = numbers[index]
+    }
+    if (menorNumero > numbers[index]){
+        menorNumero = numbers[index]
     }
 }
-if (contadorImpar === 0){
-    console.log('nenhum valor ímpar encontrado')
-}
-console.log(contadorImpar)
+    console.log(menorNumero)
