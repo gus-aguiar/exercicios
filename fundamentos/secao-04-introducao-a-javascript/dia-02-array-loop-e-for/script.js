@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [2,4,6];
 // for (let index = 0; index < numbers.length; index += 1){
 //     console.log(numbers[index]);
 // }
@@ -14,10 +14,20 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // } else if (media <= 20){
 //     console.log('valor menor do que 20')
 // }
-maiorn = 0
-for (let index = 0;index < numbers.length; index += 1){
-    if(numbers[index] > maiorn){
-        maiorn = numbers[index]
+// maiorn = 0
+// for (let index = 0;index < numbers.length; index += 1){
+//     if(numbers[index] > maiorn){
+//         maiorn = numbers[index]
+//     }
+// }
+// console.log(maiorn)
+let contadorImpar = 0 
+for(let index = 0 ; index < numbers.length; index += 1){
+    if(numbers[index] % 2 === 1){
+        contadorImpar += 1
     }
 }
-console.log(maiorn)
+if (contadorImpar === 0){
+    console.log('nenhum valor ímpar encontrado')
+}
+console.log(contadorImpar)
