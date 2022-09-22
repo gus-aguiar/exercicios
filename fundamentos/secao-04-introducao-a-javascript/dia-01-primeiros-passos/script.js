@@ -86,41 +86,41 @@
 // } else{console.log(false)}
 
 let salarioBruto = 17000
-let aliquotaINSS = 0
-let salarioLiquido = 0
-let IRSS = 0 
+let aliquotaINSS = 0 // não tinha declarado essa variável
+let salarioLiquido = 0 // não tinha declarado essa variável
+let IRSS = 0 // não tinha declarado essa variável
 
 if (salarioBruto <= 1556.94){
-     aliquotaINSS = (salarioBruto * 8) / 100
+     aliquotaINSS = (salarioBruto * 8) / 100 // aqui tinha um let antes de aliquota
 } 
-else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){ // aqui tinha um let antes de aliquota
     aliquotaINSS = (salarioBruto * 9) / 100
 } 
-else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){ // aqui tinha um let antes de aliquota
     aliquotaINSS = (salarioBruto * 11) / 100
 } 
 else if (salarioBruto > 5198.82){
-    aliquotaINSS = 570.88
+    aliquotaINSS = 570.88 // aqui tinha um let antes de aliquota
 }
 salarioDescontado1 = salarioBruto - aliquotaINSS
 if ( salarioDescontado1 < 1903.98){
-    salarioLiquido = salarioDescontado1
+    salarioLiquido = salarioDescontado1 // aqui tinha um let antes de salarioLiquido
 }
 else if (salarioDescontado1 >= 1903.99 && salarioDescontado1 <= 2826.65){
-    IRSS = (7.5 * salarioDescontado1/100) - 142.80
-    salarioLiquido = salarioDescontado1 - IRSS 
+    IRSS = (7.5 * salarioDescontado1/100) - 142.80 // aqui tinha um let antes de IRSS
+    salarioLiquido = salarioDescontado1 - IRSS  // aqui tinha um let antes de salarioLiquido
 }
 else if (salarioDescontado1 >= 2826.66 && salarioDescontado1 <= 3751.05){
-    IRSS = (15 * salarioDescontado1/100) - 354.80
-    salarioLiquido = salarioDescontado1 - IRSS 
+    IRSS = (15 * salarioDescontado1/100) - 354.80 // aqui tinha um let antes de IRSS
+    salarioLiquido = salarioDescontado1 - IRSS // aqui tinha um let antes de salarioLiquido
 }
 else if (salarioDescontado1 >= 3751.06 && salarioDescontado1 <= 4664.68){
-    IRSS = (15 * salarioDescontado1/100) - 636.13
-    salarioLiquido = salarioDescontado1 - IRSS 
+    IRSS = (15 * salarioDescontado1/100) - 636.13 // aqui tinha um let antes de IRSS
+    salarioLiquido = salarioDescontado1 - IRSS // aqui tinha um let antes de salarioLiquido
 }
 else if (salarioDescontado1 > 4664.68){
-    IRSS = (27 * salarioDescontado1/100) - 869.36
-    salarioLiquido = salarioDescontado1 - IRSS 
+    IRSS = (27 * salarioDescontado1/100) - 869.36 // aqui tinha um let antes de IRSS
+    salarioLiquido = salarioDescontado1 - IRSS // aqui tinha um let antes de salarioLiquido
 }
 console.log (salarioLiquido)
 
