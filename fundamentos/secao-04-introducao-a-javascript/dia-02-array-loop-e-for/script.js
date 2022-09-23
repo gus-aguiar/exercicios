@@ -32,13 +32,14 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // }
 // console.log(contadorImpar)
 
-let menorNumero = 0 
-for(let index = 0 ; index < numbers.length; index += 1){
-    if(numbers[index] > 0){
-        menorNumero = numbers[index]
-    }
-    if (menorNumero > numbers[index]){
-        menorNumero = numbers[index]
-    }
+// let menorNumero = numbers[0] 
+// for(let index = 0 ; index < numbers.length; index += 1){
+//     if (menorNumero > numbers[index]){
+//         menorNumero = numbers[index]
+//     }
+// }
+//     console.log(menorNumero)
+
+for(let index = 0; index <= 25 ; index +=1){
+    console.log(index/2)
 }
-    console.log(menorNumero)
