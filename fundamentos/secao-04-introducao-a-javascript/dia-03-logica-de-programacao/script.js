@@ -17,3 +17,13 @@
 // console.log(reverso)
 
 //=========================================================
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+
+for(let palavra = 0; palavra <= array.length -1 ; palavra+=1){
+    for (let letras = 0; letras <= palavra[letras] -1; letras+=1 ){
+        if(palavra[letras]> palavra[letras -1 ]){
+            console.log(palavra[letras])
+        }
+    }
+}
