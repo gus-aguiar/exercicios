@@ -51,7 +51,7 @@
 
 let array = ['java', 'javascript', 'python', 'html', 'css','psurucobiruleibe'];
 let maiorPalavra =[]
-let menorPalavra =['psurucobiruleibe']
+let menorPalavra = array[0]
 
 for (let index = 0; index < array.length; index += 1) {
     if (array[index].length < menorPalavra.length) {
@@ -59,7 +59,21 @@ for (let index = 0; index < array.length; index += 1) {
     }
     
 }
-console.log ('a menor palavra é ' + menorPalavra)
+// console.log ('a menor palavra é ' + menorPalavra)
+console.log (menorPalavra)
 
-//============ dúvida na menor palavra ==================
+// ============ dúvida na menor palavra ==================
 
+// =====Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 2 e 50. ===//
+
+//descobrir se um número é primo
+// let numero = 10 // trocar para checar se o número é primo
+// let intervalo = 50
+// let resultado = []
+//     for(index = 2; index <= intervalo; index +=1)
+//         for(let index = 2; index < numero ; index +=1 ){
+//             if(numero % index != 0){
+//                 resultado.push(numero)
+//             }
+//         }
+//         console.log(intervalo)
