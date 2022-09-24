@@ -15,15 +15,38 @@
 // }
 
 // console.log(reverso)
+// for(let palavra = 0; palavra <= array.length -1 ; palavra+=1){
+//     for (let letras = 0; letras <= palavra[letras] -1; letras+=1 ){
+//         if(palavra[letras]> palavra[letras -1 ]){
+//             console.log(palavra[letras])
+//         }
+//     }
+// }
+
 
 //=========================================================
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+//============comecei a refazer os exercícios do dia 03 =================
 
-for(let palavra = 0; palavra <= array.length -1 ; palavra+=1){
-    for (let letras = 0; letras <= palavra[letras] -1; letras+=1 ){
-        if(palavra[letras]> palavra[letras -1 ]){
-            console.log(palavra[letras])
-        }
-    }
-}
+
+//===========Com base nessas informações, crie um algoritmo que imprima na tela o fatorial de 10.
+
+// let fatorial = 1
+// let numerito = 10
+// for(let index = numerito; index > 0; index -= 1){
+//     fatorial = fatorial * index 
+// }
+// console.log(fatorial)
+
+//==Utilize a estrutura de repetição for para desenvolver um algoritmo que seja capaz de inverter uma palavra. Por exemplo, a palavra “banana” seria invertida para “ananab”. Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.===//
+
+// let word = 'psuruco';
+// let reverse = []
+// for (let index = word.length - 1; index >= 0; index -= 1 ){
+//     reverse.push(word[index])
+// }
+// console.log(reverse)
+
+//==Utilize a estrutura de repetição for para escrever dois algoritmos: um que retorne a maior palavra desse array e outro que retorne a menor. Considere o número de caracteres de cada palavra.==//
+
+
