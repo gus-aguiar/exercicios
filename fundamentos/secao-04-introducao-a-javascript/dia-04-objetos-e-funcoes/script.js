@@ -16,6 +16,10 @@ let infoDois = {
     recorrente: 'Sim'
 }
 for (let key in info,infoDois){
-    if( info.recorrente && infoDois.recorrente === "Sim"){
-    console.log(info[0,1,2] ,' e ', infoDois[0,1,2])}
+    if( key === "recorrente" &&
+    info[key] ==="Sim" &&
+    infoDois[key] ==="Sim"){
+        console.log('Ambos recorrentes')
+    
+}
 }
