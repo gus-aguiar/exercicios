@@ -19,7 +19,10 @@ for (let key in info,infoDois){
     if( key === "recorrente" &&
     info[key] ==="Sim" &&
     infoDois[key] ==="Sim"){
-        console.log('Ambos recorrentes')
+        return('Ambos recorrentes')
     
 }
 }
+console.log(info +" e "+ infoDois)
+
+//==============================dúvida aqui em cima======================================//
