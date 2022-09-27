@@ -107,3 +107,25 @@
 // console.log(menorValor([2, 4, 6, 7, 10, 0, -3]))
 
 //=====================exercício 04===========================//
+
+function maiorCaracteres(nomes){
+  let maiorNome = nomes[0];
+  for(let index in nomes){
+    if (maiorNome.length < nomes[index].length){
+      maiorNome = nomes[index]
+    }
+  }
+  return maiorNome
+}
+console.log(maiorCaracteres(['José', 'Lucas', 'Nádia','borabiiiiilllllllll', 'Fernanda', 'Cairo', 'Joana','psurucobiruleibe']))
+
+
+function numeroRepete(numeros){
+  for(let index in numeros){
+    for(let indexDois in numeros){
+      if (numeros[index] === numeros[indexDois]){
+        contador += 1
+      }
+    }
+  }
+}
