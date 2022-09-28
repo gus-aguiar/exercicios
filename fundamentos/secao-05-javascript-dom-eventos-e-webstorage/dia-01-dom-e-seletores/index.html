@@ -77,6 +77,13 @@
         document.getElementsByTagName("p")[0].style.textTransform ="uppercase"
       }
       alteraMaiusculo()
+
+      function exibeP(){
+        for(let index = 0; index < document.getElementsByTagName("p").length; index+=1) {
+            console.log(document.getElementsByTagName("p")[index])
+        }
+      }
+      exibeP()
     </script>
   </body>
 </html>
