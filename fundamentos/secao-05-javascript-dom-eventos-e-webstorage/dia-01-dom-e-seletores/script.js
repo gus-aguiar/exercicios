@@ -1,0 +1,1 @@
+document.getElementsByClassName("emergency-tasks"[0]).style.backgroundColor = 'black' 
