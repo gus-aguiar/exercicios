@@ -57,7 +57,28 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      let agaUm = document.createElement('h1')
+      document.body.appendChild(agaUm).innerText = 'Exercício - JavaScript DOM'
+      let main = document.createElement('main')
+      document.body.appendChild(main).className = 'main-content'
+      let section = document.createElement('section')
+      document.getElementsByClassName('main-content')[0].appendChild(section).className = 'center-content'
+      let paragraph = document.createElement('p')
+      document.getElementsByClassName('center-content')[0].appendChild(paragraph).innerText = 'alou galera de cowboy'
+      let sectionDois = document.createElement('section')
+      document.getElementsByClassName('main-content')[0].appendChild(sectionDois).className = 'left-content'
+      let sectionTres = document.createElement('section')
+      document.getElementsByClassName('main-content')[0].appendChild(sectionTres).className = 'right-content'
+      let imgUm = document.createElement('img')
+      imgUm.src ='https://picsum.photos/200'
+      document.getElementsByClassName('left-content')[0].appendChild(imgUm).className = 'small-image'
+      let ulUm = document.createElement('ul')
+      document.getElementsByClassName('right-content')[0].appendChild(ulUm).id = 'ulUm'
+      let numerosDaLi = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
+      for(let index = 0; index < 10; index += 1){
+        let createLi = document.createElement('li')
+        createLi.innerHTML = numerosDaLi[index]
+      }
     </script>
   </body>
 </html>
