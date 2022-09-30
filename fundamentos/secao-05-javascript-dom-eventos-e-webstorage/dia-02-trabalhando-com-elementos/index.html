@@ -76,9 +76,29 @@
       document.getElementsByClassName('right-content')[0].appendChild(ulUm).id = 'ulUm'
       let numerosDaLi = ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez']
       for(let index = 0; index < 10; index += 1){
-        let createLi = document.createElement('li')
-        document.getElementsByClassName('right-content')[0],appendChild(createLi).innerHTML = numerosDaLi[index]
+        let createLi = document.createElement('li');
+        createLi.innerText = numerosDaLi[index];
+        document.getElementsByClassName('right-content')[0].appendChild(createLi);
       }
+      let h31 = document.createElement('h3')
+      let h32 = document.createElement('h3')
+      let h33 = document.createElement('h3')
+      document.getElementsByClassName('main-content')[0].appendChild(h31);
+      document.getElementsByClassName('main-content')[0].appendChild(h32);
+      document.getElementsByClassName('main-content')[0].appendChild(h33);
+      document.getElementsByTagName('h1')[0].className = 'title'
+      document.getElementsByTagName('h3')[0].className ='description'
+      document.getElementsByTagName('h3')[1].className ='description'
+      document.getElementsByTagName('h3')[2].className ='description'
+      let achaLeft = document.getElementsByClassName('left-content')[0]
+      let achaMain = document.getElementsByClassName('main-content')[0]
+      let removeLeft = achaMain.removeChild(achaLeft)
+      let achaRight = document.getElementsByClassName('right-content')[0]
+      let centralizaRight = achaRight.style.marginRight='auto'
+      let achaPaiCenter = document.getElementsByClassName('center-content')[0].parentElement.style.backgroundColor ='green'
+      let removeNove = document.getElementsByTagName('li')[8].remove()
+      let removeoito = document.getElementsByTagName('li')[7].remove()
+
     </script>
   </body>
 </html>
