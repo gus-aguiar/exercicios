@@ -51,14 +51,13 @@ function createDaysOfTheWeek() {
   
 
   function coloreHoliday(){
-  let backgroundColor = rgb(238,238,238)
+  // let backgroundColor = rgb(238,238,238)
   let holidayzera = document.getElementsByClassName('holiday')
   for (let index = 0; index < holidayzera.length; index +=1){
-  if (holidayzera[index].style.backgroundColor = "red"){
-    holidayzera[index].style.backgroundColor = backgroundColor
+    if (holidayzera[index].style.backgroundColor === "red") {
+      holidayzera[index].style.backgroundColor = "rgb(238,238,238)"
+    }else {holidayzera[index].style.backgroundColor = "red"}
   }
-  }
-  apertado = true
 }
 
 
