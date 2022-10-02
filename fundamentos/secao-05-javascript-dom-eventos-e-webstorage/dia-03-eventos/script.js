@@ -15,6 +15,7 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  function Criacalendrio (){
   let ulPai = document.getElementById('days')
   for (let index in decemberDaysList){
     let criaLi = document.createElement('li')
@@ -29,6 +30,8 @@ function createDaysOfTheWeek() {
   document.getElementsByClassName('day')[12].className ='day friday'
   document.getElementsByClassName('day')[19].className ='day friday'
   document.getElementsByClassName('day')[26].className ='day friday'
+  }
+  Criacalendrio ()
 
   function createButton (param){
     let divPai = document.getElementsByClassName('buttons-container')[0]
@@ -38,6 +41,7 @@ function createDaysOfTheWeek() {
     divPai.appendChild(button)
     
   }
+
   createButton ('feriado')
   
   let botao = document.getElementById('btn-holiday')
@@ -63,12 +67,19 @@ function botaoSexta (param){
 }
 botaoSexta('Sexta-feira')
 
-function coloreSexta (param){
-  let listapai = document.querySelectorAll('.friday')
-  for(let key = 0; key < listapai.length; key += 1){
-    listapai[key].innerHTML = param
-  }
-}
 
-coloreSexta('sextou')
-// document.querySelectorAll('.friday')[0].innerHTML = 'red'
+let botaoDois = document.getElementById('btn-friday')
+
+botaoDois.addEventListener('click', function (){
+  let listapai = document.querySelectorAll('.friday')
+  const numerosSexta = document.querySelectorAll('.friday').innerText
+  for(let key = 0; key < listapai.length; key += 1){
+    if(listapai[key].innerHTML !== 'sextou!'){
+    listapai[key].innerHTML = 'sextou!'}
+    else if(listapai[key].innerHTML === param){
+      listapai[key] = numerosSexta
+    } 
+  }
+
+})
+//=======================================aqui não consegui fazer o valor de volta do sextou ===================================//
