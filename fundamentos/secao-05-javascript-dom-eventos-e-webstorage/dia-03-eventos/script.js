@@ -62,3 +62,13 @@ function botaoSexta (param){
   pai.appendChild(botaoSexta)
 }
 botaoSexta('Sexta-feira')
+
+function coloreSexta (param){
+  let listapai = document.querySelectorAll('.friday')
+  for(let key = 0; key < listapai.length; key += 1){
+    listapai[key].innerHTML = param
+  }
+}
+
+coloreSexta('sextou')
+// document.querySelectorAll('.friday')[0].innerHTML = 'red'
