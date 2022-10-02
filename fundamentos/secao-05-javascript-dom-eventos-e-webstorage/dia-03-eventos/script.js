@@ -84,7 +84,17 @@ botaoDois.addEventListener('click', function (){
   }
 })
 
-// ===============================??????????????????????=====================================//
+function criaTarefa(param){
+  let pegaDiv = document.getElementsByClassName('my-tasks')[0]
+  let criaSpan = document.createElement('span')
+  criaSpan.innerText = param
+pegaDiv.appendChild(criaSpan)
+}
+
+criaTarefa('cozinhar')
+
+
+function aumentaDiminui(){
 let calendarioTodo = document.getElementsByClassName('day')
 for (index in calendarioTodo){
   let calendario =  calendarioTodo[index]
@@ -102,4 +112,5 @@ for (index in calendarioTodo){
   }
  
 }
-// ===============================??????????????????????=====================================//
+}
+aumentaDiminui
