@@ -105,11 +105,21 @@ botaoDois.addEventListener('click', function (){
   legenda('red')
 
 
+document.getElementsByClassName('task')[0]
 
+function checkTask(){
+  let tasks = document.getElementsByClassName('task')[0]
+  tasks.addEventListener('click', function (event){
+  if(event.target.className === 'task'){
+    tasks.className = 'task selected'
+  } else if(event.target.className === 'task selected'){
+    tasks.className = 'task'
+  }
+  }
+  )
+  }
 
-
-
-
+checkTask()
 
 
 
