@@ -15,6 +15,7 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  
   function Criacalendrio (){
   let ulPai = document.getElementById('days')
   for (let index in decemberDaysList){
@@ -69,17 +70,17 @@ botaoSexta('Sexta-feira')
 
 
 let botaoDois = document.getElementById('btn-friday')
-
+const numerosSexta = document.querySelectorAll('.friday')
+let newFriday = 'sextou!'
 botaoDois.addEventListener('click', function (){
-  let listapai = document.querySelectorAll('.friday')
-  const numerosSexta = document.querySelectorAll('.friday').innerText
-  for(let key = 0; key < listapai.length; key += 1){
-    if(listapai[key].innerHTML !== 'sextou!'){
-    listapai[key].innerHTML = 'sextou!'}
-    else if(listapai[key].innerHTML === param){
-      listapai[key] = numerosSexta
+  for(let key = 0; key < numerosSexta.length; key += 1){
+    const sextas = [4, 11, 18, 25]
+    if(numerosSexta[key].innerHTML !== newFriday){
+    numerosSexta[key].innerHTML = newFriday}
+    else if(numerosSexta[key].innerHTML === newFriday){
+      numerosSexta[key].innerHTML = sextas[key]
     } 
   }
-
 })
-//=======================================aqui não consegui fazer o valor de volta do sextou ===================================//
+
+
