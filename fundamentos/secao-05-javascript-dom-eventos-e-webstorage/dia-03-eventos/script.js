@@ -39,3 +39,26 @@ function createDaysOfTheWeek() {
     
   }
   createButton ('feriado')
+  
+  // function Corferiado (){
+  //   let pegaHoliday = document.getElementsByClassName('holiday')
+  //   for(let index in pegaHoliday)
+  //   pegaHoliday[index].style.backgroundColor = 'red'
+  // }
+  // Corferiado
+  let botao = document.getElementById('btn-holiday')
+  botao.addEventListener('click',coloreHoliday) 
+  
+
+  function coloreHoliday(){
+  let backgroundColor = rgb(238,238,238)
+  let holidayzera = document.getElementsByClassName('holiday')
+  for (let index = 0; index < holidayzera.length; index +=1){
+  if (holidayzera[index].style.backgroundColor = "red"){
+    holidayzera[index].style.backgroundColor = backgroundColor
+  }
+  }
+  apertado = true
+}
+
+
