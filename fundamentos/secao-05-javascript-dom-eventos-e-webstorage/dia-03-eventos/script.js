@@ -82,7 +82,36 @@ botaoDois.addEventListener('click', function (){
       numerosSexta[key].innerHTML = sextas[key]
     } 
   }
-})
+}
+  )
+
+  function criaTarefa(param){
+    let pegaDiv = document.getElementsByClassName('my-tasks')[0]
+    let criaSpan = document.createElement('span')
+    criaSpan.innerText = param
+  pegaDiv.appendChild(criaSpan)
+  }
+  
+  criaTarefa('cozinhar')
+
+  function legenda (param){
+    let pegaDiv = document.getElementsByClassName('my-tasks')[0]
+    let criaDiv = document.createElement('div')
+    criaDiv.className = 'task'
+    criaDiv.style.backgroundColor = param
+    pegaDiv.appendChild(criaDiv)
+  
+  }
+  legenda('red')
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,36 +135,10 @@ for (index in calendarioTodo){
 }
 }
 
-aumentaDiminui
-
-function criaTarefa(param){
-  let pegaDiv = document.getElementsByClassName('my-tasks')[0]
-  let criaSpan = document.createElement('span')
-  criaSpan.innerText = param
-pegaDiv.appendChild(criaSpan)
-}
-
-criaTarefa('cozinhar')
+aumentaDiminui()
 
 
-function legenda (param){
-  let pegaDiv = document.getElementsByClassName('my-tasks')[0]
-  let criaDiv = document.createElement('div')
-  criaDiv.className = 'task'
-  criaDiv.style.backgroundColor = param
-  pegaDiv.appendChild(criaDiv)
 
-}
-legenda('red')
 
-function trocaTarefa(){
-let task = document.getElementsByClassName('task')[0]
-task.addEventListener('click', function(event){
-  if (event.target === 'task selected'){
-    event.target.className = 'task'
-  }
-  else if(event.target.className === 'task' || event.target.className.length === 0 ){
-    event.target.className = 'task selected'
-  }
-}
-}
+
+
