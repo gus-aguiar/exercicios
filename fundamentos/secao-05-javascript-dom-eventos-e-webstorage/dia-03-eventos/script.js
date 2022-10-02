@@ -40,12 +40,6 @@ function createDaysOfTheWeek() {
   }
   createButton ('feriado')
   
-  // function Corferiado (){
-  //   let pegaHoliday = document.getElementsByClassName('holiday')
-  //   for(let index in pegaHoliday)
-  //   pegaHoliday[index].style.backgroundColor = 'red'
-  // }
-  // Corferiado
   let botao = document.getElementById('btn-holiday')
   botao.addEventListener('click',coloreHoliday) 
   
@@ -60,4 +54,11 @@ function createDaysOfTheWeek() {
   }
 }
 
-
+function botaoSexta (param){
+  let pai = document.getElementsByClassName('buttons-container')[0]
+  let botaoSexta = document.createElement('button')
+  botaoSexta.innerText = param
+  botaoSexta.id = "btn-friday"
+  pai.appendChild(botaoSexta)
+}
+botaoSexta('Sexta-feira')
