@@ -102,7 +102,8 @@ botaoDois.addEventListener('click', function (){
     pegaDiv.appendChild(criaDiv)
   
   }
-  legenda('red')
+  let corLegenda = 'purple'
+  legenda(corLegenda)
 
 
 document.getElementsByClassName('task')[0]
@@ -121,8 +122,18 @@ function checkTask(){
 
 checkTask()
 
-
-
+function coloreDia (){
+  let dias = document.getElementsByClassName('day')
+  let colorido = false
+  for(let index in dias){
+  dias[index].addEventListener('click' , function(event){
+    if(event.target.className === 'day'){
+      dias[index].style.backgroundColor = 'purple'
+  }
+  })
+  }
+}
+coloreDia()
 
 
 function aumentaDiminui(){
