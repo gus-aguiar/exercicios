@@ -22,6 +22,7 @@ function createDaysOfTheWeek() {
     let criaLi = document.createElement('li')
     criaLi.innerHTML = decemberDaysList[index]
     criaLi.className = 'day'
+    criaLi.id = 'dia' + index
     ulPai.appendChild(criaLi)
   }
   document.getElementsByClassName('day')[25].className ='day holiday'
@@ -83,4 +84,22 @@ botaoDois.addEventListener('click', function (){
   }
 })
 
+// ===============================??????????????????????=====================================//
+let calendarioTodo = document.getElementsByClassName('day')
+for (index in calendarioTodo){
+  let calendario =  calendarioTodo[index]
+  calendario.addEventListener('mouseover', aumenta)
+  function aumenta (event){
+    event.target.style.fontSize = '30px'
+    event.target.style.weight = '200'
+    
+  }
+  calendario.addEventListener('mouseout', diminui)
 
+  function diminui (event){
+    event.target.style.fontSize = '20px'
+    event.target.style.weight = '600'
+  }
+ 
+}
+// ===============================??????????????????????=====================================//
