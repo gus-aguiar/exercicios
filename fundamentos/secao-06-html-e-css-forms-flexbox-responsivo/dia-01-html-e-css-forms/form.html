@@ -9,52 +9,61 @@
 <body>
     <header><h1>Header da página</h1></header>
     <section id="section">
-        <label for="nome">
-            Nome: 
-            <input type="text" name="nome" id="inputNome">
-        </label>
-        <br>
-        <br>
-        <label for="email">
-            E-mail:
-            <input type="email" name="email" id="inputmail">
-        </label>
-        <br>
-        <br>
-        <label for="opt1">
-            Opção 1
-            <input type="radio" name="opt" id="opt1">
-        </label>
-        <label for="opt2">
-            Opção 2
-            <input type="radio" name="opt" id="opt2">
-        </label>
-        <label for="opt3">
-            Opção 3
-            <input type="radio" name="opt" id="opt3">
+        <form action="GET">
+            <label for="nome">
+                Nome: 
+                <input type="text" name="nome" id="inputNome" minlength="10" maxlength="40">
+            </label>
             <br>
             <br>
+            <label for="email">
+                E-mail:
+                <input type="email" name="email" id="inputmail" minlength="10" maxlength="50">
+            </label>
             <br>
             <br>
-        </label>
-        <label for="textboxinha"> Espaço para digitar resposta
-        </label>
-        <br>
-        <br>        
-        <textarea name="textboxinha" id="textArea" cols="30" rows="5"></textarea>
-        <br>
-        <br> 
-        <label for="data">
-            data:
-        </label> 
-        <input type="date" name="data" id="data"> 
-        <br>
-        <br> 
-        <label for="checkboxUm">Concordo 1</label>
-        <input type="checkbox" name="checkboxUm" value="concordo1">
-        <label for="checkboxDois">Concordo 1</label>
-        <input type="checkbox" name="checkboxDois" value="concordo2">
-    </section>
-    
+            <label for="opt1">
+                Cidade
+                <input type="radio" name="opt" id="opt1">
+            </label>
+            <label for="opt2">
+                Campo
+                <input type="radio" name="opt" id="opt2">
+            </label>
+            <label for="opt3">
+                Praia
+                <input type="radio" name="opt" id="opt3">
+            <label for="opt4">
+                Montanhas
+                <input type="radio" name="opt" id="opt4">    
+                <br>
+                <br>
+                <br>
+                <br>
+            </label>
+            <label for="textboxinha"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+            </label>
+            <br>
+            <br>        
+            <textarea name="textboxinha" id="textArea" cols="30" rows="5" maxlength="500"></textarea>
+            <br>
+            <br> 
+            <label for="data">
+                Qual a melhor data para realizar sua viagem?
+            </label> 
+            <input type="date" name="data" id="data"> 
+            <br>
+            <br> 
+            <label for="checkboxUm">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input type="checkbox" name="checkboxUm" value="concordo1">
+            <br>
+            <br>
+            <label for="checkboxDois">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <input type="checkbox" name="checkboxDois" value="concordo2">
+            <button type="submit">confirma</button>
+        </section>
+    </form>
+    <script src="script.js"></script>
 </body>
+    
 </html>
