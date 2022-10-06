@@ -9,7 +9,7 @@
 <body>
     <header><h1>Header da página</h1></header>
     <section id="section">
-        <form action="GET">
+        <form action="" method="get" enctype="multipart/form-data">
             <label for="nome">
                 Nome: 
                 <input type="text" name="nome" id="inputNome" minlength="10" maxlength="40">
@@ -60,7 +60,9 @@
             <br>
             <label for="checkboxDois">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
             <input type="checkbox" name="checkboxDois" value="concordo2">
-            <button type="submit">confirma</button>
+            <br>
+            <br>
+            <button id="submit" type="submit">confirma</button>
         </section>
     </form>
     <script src="script.js"></script>
