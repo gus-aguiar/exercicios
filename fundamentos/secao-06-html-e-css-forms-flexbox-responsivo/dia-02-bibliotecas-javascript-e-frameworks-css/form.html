@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header><h1>Header da página</h1></header>
+    <br>
+    <br>
     <section id="section">
         <form action="" method="get" enctype="multipart/form-data">
+            <section id="nomeEmail" class="container mb-4 ">
             <label for="nome">
                 Nome: 
                 <input type="text" name="nome" id="inputNome" minlength="10" maxlength="40">
@@ -20,8 +25,10 @@
                 E-mail:
                 <input type="email" name="email" id="inputmail" minlength="10" maxlength="50">
             </label>
+        </section>
             <br>
             <br>
+            <section id="options">
             <label for="opt1">
                 Cidade
                 <input type="radio" name="opt" id="opt1">
@@ -36,10 +43,8 @@
             <label for="opt4">
                 Montanhas
                 <input type="radio" name="opt" id="opt4">    
-                <br>
-                <br>
-                <br>
-                <br>
+
+            </section>
             </label>
             <label for="textboxinha"> Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
             </label>
