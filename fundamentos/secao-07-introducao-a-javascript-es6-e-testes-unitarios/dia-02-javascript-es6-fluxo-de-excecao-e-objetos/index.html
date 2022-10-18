@@ -15,21 +15,27 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-      const verifica = (value1,value2) => {
-          if(typeof value1 !== 'number' || typeof value2 !== 'number'){
-              throw new Error('Os valores precisam ser numéricos')
+      const verifica = (value1 , value2) => {
+          if(value1 === "" || value2 === ""){
+              throw new Error('Voce precisa preencher os dois valores')
+            }
+        }
+        const verificaDois = (value1, value2) =>{
+            if(isNaN(value1) || isNaN(value2)){
+                throw new Error ('Os valores precisam ser numéricos')
             }
         }
         function sum() {
             const value1 = document.getElementById('value1').value;
             const value2 = document.getElementById('value2').value;
             try {
-                verifica(value1,value2);
-        const result = Number(value1) + Number(value2);
+                verifica(value1, value2);
+                verificaDois(value1,value2)
+                const result = Number(value1) + Number(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
 
       } catch (error) {
-        alert(error.message)
+        document.getElementById('result').innerHTML = error.message
     }finally{
         document.getElementById('value1').value = '';
         document.getElementById('value2').value = '';
