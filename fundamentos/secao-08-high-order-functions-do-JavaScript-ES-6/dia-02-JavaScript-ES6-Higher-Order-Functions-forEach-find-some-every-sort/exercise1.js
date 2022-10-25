@@ -65,5 +65,5 @@ const books = [
   function authorBornIn1947(autor) {
   return autor.author.birthYear === 1947
   }
-  console.log(books.find(authorBornIn1947))
-  console.log(books.find(authorBornIn1947).author.name)
+//   console.log(books.find(authorBornIn1947))
+//   console.log(books.find(authorBornIn1947).author.name)
