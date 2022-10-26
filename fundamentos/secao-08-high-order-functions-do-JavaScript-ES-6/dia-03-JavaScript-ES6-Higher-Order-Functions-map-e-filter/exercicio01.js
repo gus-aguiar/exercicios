@@ -64,7 +64,7 @@ const books = [
   // Adicione o código do exercício aqui:
   const array = books.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
 //   console.log (array)
-
+//=====================1====================//
 
   
   function nameAndAge() {
@@ -75,4 +75,14 @@ const books = [
     }
     )).sort((obj1, obj2) => obj1.age - obj2.age)
   }
-  console.log(nameAndAge())
+//   console.log(nameAndAge())
+  //======================2=====================//
+
+  
+  function fantasyOrScienceFiction() {
+    return books.filter((element) => (
+        element.genre === 'Fantasia' || element.genre === 'Ficção Científica'
+    ));
+    }
+  
+  console.log(fantasyOrScienceFiction())
