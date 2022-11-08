@@ -12,5 +12,6 @@
   "dependencies": {
     "validator.js": "^2.0.4",
     "vite": "^3.2.3"
-  }
+  },
+  "type": "module"
 }
