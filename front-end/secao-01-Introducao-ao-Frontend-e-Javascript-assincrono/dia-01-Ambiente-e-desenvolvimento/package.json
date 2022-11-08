@@ -1,0 +1,16 @@
+{
+  "name": "dia-01-ambiente-e-desenvolvimento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx vite --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "validator.js": "^2.0.4",
+    "vite": "^3.2.3"
+  }
+}
