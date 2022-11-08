@@ -9,6 +9,7 @@ const names = [
   function containsA() {
     return names.reduce((acc, curr) =>{
     let Tudo = `${acc}${curr}`
+    console.log(Tudo)
     let contagem = 0
         Tudo.split('').forEach((element) => {
             if (element === 'a' || element === 'A')
