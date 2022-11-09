@@ -9,7 +9,7 @@
 <body>
     <div class="form">
     <form action="" method="get">
-        <input type="text" placeholder="seu texto a ser validado">
+        <input id='text' type="text" placeholder="seu texto a ser validado">
         <select>
             <option value="validação 01">validação 01</option>
             <option value="validação 02">validação 02</option>
@@ -17,9 +17,10 @@
             <option value="validação 04">validação 04</option>
             <option value="validação 05">validação 05</option>
           </select>
-          <input type="submit" id="submit">
+          <button type="submit" id="submit"> validar </button>
+          <p id="textoDeSaida">Sua resposta vem aqui.</p>
     </form>
     </div>
-    <script type="module"src=".src/main.js"></script>
+    <script type="module" src=".src/main.js"></script>
 </body>
 </html>
