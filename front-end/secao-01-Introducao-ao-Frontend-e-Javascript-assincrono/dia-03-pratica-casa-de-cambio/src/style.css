@@ -1,0 +1,10 @@
+#coin{
+    display: flex;
+    justify-content: flex-start;
+    background-color: aqua;
+    
+}
+.miniCoin{
+    display: flex;
+    border: solid 1px;
+}
