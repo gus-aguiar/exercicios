@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "eslint": "^8.33.0"
+  },
+  "dependencies": {
+    "redux-thunk": "^2.4.2"
+  }
+}
