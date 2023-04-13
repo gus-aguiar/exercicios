@@ -1,0 +1,18 @@
+{
+  "name": "dia-04-node-js-express-e-middlewares",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.38.0",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
