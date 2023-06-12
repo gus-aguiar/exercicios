@@ -1,21 +1,8 @@
 import fs from 'fs/promises';
 import path from 'path';
 import HttpException from '../exceptions/HttpException';
-
-interface IPlant {
-  id: number,
-  breed: string,
-  needsSun: boolean,
-  origin: string,
-  size: number,
-  waterFrequency: number,
-}
-
-type INewPlant = Omit<IPlant, 'id' | 'waterFrequency'>;
-
-interface IOpsInfo {
-  createdPlants: number
-}
+import { IPlant, INewPlant } from '../interfaces';
+import { IOpsInfo } from '../models/interfaces';
 
 class PlantService {
   private readonly plantsFile = path.join(__dirname, '..', 'models', 'database', 'plantsData.json');
